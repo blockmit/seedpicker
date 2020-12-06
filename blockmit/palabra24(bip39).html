@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <script src="bundle.js"></script>
+    <script>
+      const $ = require("jquery");
+      $(document).ready(() => {
+        require("presentation").init();
+      });
+    </script>
+  </head>
+  <body>
+  <body style="background-color:#eeeeee;">
+          <div>
+          <p></p>
+            SeedPicker es 100% Open Source software.
+            <a href="https://github.com/merland/seedpicker"
+              >https://github.com/merland/seedpicker</a
+            >
+          </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="tighter_section">
+          <div class="field">
+            <label class="label input_label"
+            <p></p>
+
+              <b>Escribe las primeras 23 palabras con un espacio para separarlas</b><p></p></label
+            >
+            <div class="field has-addons">
+              <div class="control is-expanded">
+                <input
+                  id="seedphrase_input"
+                  class="input has-background-light"
+                  type="text"
+                  size="160"
+                  required
+                />
+                <p id="seed_error_msg" class="help is-danger"></p>
+              </div>
+              <div class="control">
+                <button id="seed-submit" class="button is-info" name="submit">
+                  CALCULAR.
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="results" class="tighter_section is-hidden">
+          <div>
+            <span class="resultheading">
+              La palabra 24 es:
+              <b><span
+                id="checksum_word"
+                class="has-text-weight-bold is-size-5"
+              ></span></b>
+              <sup>
+                <span
+                  class="icon is-small tooltip has-tooltip-multiline has-tooltip-arrow"
+                  data-tooltip="Use this word as the 24th word of your seed phrase. More than one word may
+                              be valid, but for consistency SeedPicker always generates the same 24th word."
+                  onclick=""
+                >
+                  <i class="fas fa-question-circle"></i>
+                </span>
+              </sup>
+            </span>
+          </div>
+          <!--            </span>-->
+          <p></p>
+          <b><div class="resultheading">24 palabras completa</div></b>
+          <div id="complete_phrase" class="has-text-weight-bold"></div>
+          <div class="tighter_section"></div>
+          <div class="tighter_section"></div>
+          <div id="specter_export_components" class="container">
+            <div class="notification is-info-light">
+              <div class="is-italic"></div>
+              <div>&nbsp;</div>
+
+              <span id="extended_pub_heading" class="resultheading"></span>
+
+              <div class="extended_pub">
+                <div>
+                  <span
+                    id="extended_pub_result"
+                    class="has-text-weight-bold wrap-long"
+                  ></span>
+                </div>
+                </sup>
+                <div id="root_fingerprint" class="has-text-weight-bold"></div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+           <div>
+          <p></p>
+            Codigo modificado por blockmit.com:
+            <a href="https://github.com/blockmit/seedpicker"
+              >https://github.com/blockmit/seedpicker</a>
+          </div>   
+  </body>
+</html>
